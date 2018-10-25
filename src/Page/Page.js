@@ -5,6 +5,7 @@ import Row from "react-bootstrap/es/Row";
 import Col from "react-bootstrap/es/Col";
 import Thumbnail from "react-bootstrap/es/Thumbnail";
 import Button from "react-bootstrap/es/Button";
+import NavLink from "react-router-dom/es/NavLink";
 
 class Page extends Component {
   // constructor(props){
@@ -30,7 +31,8 @@ class Page extends Component {
                         <h3>Alice in Wonderland</h3>
                         <p>Description</p>
                         <p>
-                            <Button bsStyle="primary">read</Button>
+                            <NavLink to="/book" ><Button bsStyle="primary">read</Button></NavLink>
+
                             &nbsp;
                             <Button bsStyle="default">download</Button>
                         </p>

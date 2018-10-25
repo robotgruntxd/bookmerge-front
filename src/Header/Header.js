@@ -6,6 +6,7 @@ import handleSelect from "react-bootstrap/es/PagerItem";
 import Navbar from "react-bootstrap/es/Navbar";
 import NavDropdown from "react-bootstrap/es/NavDropdown";
 import MenuItem from "react-bootstrap/es/MenuItem";
+import NavLink from "react-router-dom/es/NavLink";
 
 class Header extends Component {
   // constructor(props){
@@ -28,12 +29,12 @@ class Header extends Component {
         <Navbar>
             <Navbar.Header>
                 <Navbar.Brand>
-                    <a href="#home">BookMerge</a>
+                    <NavLink to="/" >BookMerge</NavLink>
                 </Navbar.Brand>
             </Navbar.Header>
             <Nav>
-                <NavItem eventKey={1} href="#">
-                    Link
+                <NavItem eventKey={1} >
+                    <NavLink to="/book" >book</NavLink>
                 </NavItem>
                 <NavItem eventKey={2} href="#">
                     Link

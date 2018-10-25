@@ -1,29 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 import Sidebar from "./Sidebar/Sidebar";
-import Header from "./Header/Header";
-import Grid from "react-bootstrap/es/Grid";
-import Row from "react-bootstrap/es/Row";
-import Col from "react-bootstrap/es/Col";
 import Page from "./Page/Page";
+import Switch from "react-router-dom/es/Switch";
+import Route from "react-router-dom/es/Route";
+import BrowserRouter from "react-router-dom/es/BrowserRouter";
+import Header from "./Header/Header";
+import Home from "./Home/Home";
+import Book from "./Book/Book";
 
 class App extends Component {
   render() {
     return (
-        <Grid>
-            <Row className="show-grid">
-                <Col xs={4} md={4}>
-                    {/*<code>{'<Col xs={12} md={8} />'};</code>*/}
-                        <Sidebar/>
 
-                </Col>
-                <Col xs={8} md={8}>
-                   <Page/>
-                </Col>
-            </Row>
-
-        </Grid>
+        <BrowserRouter>
+            <div>
+                <Header/>
+                <Switch>
+                    <Route path="/" component={Home} exact />
+                    <Route path="/book" component={Book} />
+                </Switch>
+            </div>
+        </BrowserRouter>
     );
   }
 }
