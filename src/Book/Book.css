@@ -1,29 +1,34 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #FAFAFA;
-    font: 12pt "Tahoma";
-}
+/*body {*/
+    /*margin: 0 auto;*/
+    /*padding: 0;*/
+    /*background-color: #FAFAFA;*/
+    /*font: 12pt "Tahoma";*/
+/*}*/
 
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 
-.page {
-    width: 21cm;
+.viewer {
+    width: 100%;
     min-height: 29.7cm;
-    padding: 2cm;
-    margin: 1cm auto;
-    border: 1px #D3D3D3 solid;
-    border-radius: 5px;
-    background: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-
-
-    zoom: 100%;
-
 }
+
+/*.page {*/
+    /*width: 21cm;*/
+    /*min-height: 29.7cm;*/
+    /*padding: 0;*/
+    /*margin: 1cm auto;*/
+    /*border: 1px #D3D3D3 solid;*/
+    /*border-radius: 5px;*/
+    /*background: white;*/
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
+
+
+    /*zoom: 100%;*/
+
+/*}*/
 
 .subpage {
     padding: 1cm;
@@ -34,12 +39,12 @@ body {
 
 @page {
     size: A4;
-    margin: 0;
+    margin: 0 auto;
 }
 
 @media print {
     .page {
-        margin: 0;
+        margin: 0 auto;
         border: initial;
         border-radius: initial;
         width: initial;

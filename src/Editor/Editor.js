@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import './Home.css';
+import './Editor.css';
 import Grid from "react-bootstrap/es/Grid";
 import Row from "react-bootstrap/es/Row";
 import Col from "react-bootstrap/es/Col";
 import Sidebar from "../Sidebar/Sidebar";
-import Page from "../Page/Page";
+import Writer from "../Writer/Writer";
 
-class Home extends Component {
+class Editor extends Component {
   // constructor(props){
     // super();
     // this.state = {};
@@ -28,16 +28,16 @@ class Home extends Component {
               <Row className="show-grid">
                   <Col xs={4} md={4}>
                       {/*<code>{'<Col xs={12} md={8} />'};</code>*/}
-                          <Sidebar/>
-                            </Col>
+                      <Sidebar/>
+                  </Col>
                   <Col xs={8} md={8}>
-                     <Page/>
+                      <Writer/>
                   </Col>
               </Row>
-                    </Grid>
+          </Grid>
       </div>
     );
   }
 }
 
-export default Home;
+export default Editor;

@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './Sidebar.css';
-import Visual from "../Visual/Visual";
-import ButtonToolbar from "react-bootstrap/es/ButtonToolbar";
-import Button from "react-bootstrap/es/Button";
 import ListGroup from "react-bootstrap/es/ListGroup";
-import Row from "react-bootstrap/es/Row";
-import Col from "react-bootstrap/es/Col";
-import Grid from "react-bootstrap/es/Grid";
 import ListGroupItem from "react-bootstrap/es/ListGroupItem";
+
 function alertClicked() {
     alert('You clicked the third ListGroupItem');
 }
